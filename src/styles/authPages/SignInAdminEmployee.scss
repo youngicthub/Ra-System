@@ -1,0 +1,102 @@
+main.SignAdminEmployee {
+    padding: 40px 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .left_content {
+        height: 568px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .right_content {
+        width: 550px;
+        // height: 688px;
+
+        .header_wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 250px;
+
+            h1 {
+                font-size: 46px;
+                font-style: normal;
+                font-weight: 600px;
+                color: #15182E;
+                line-height: 8.96px;
+                letter-spacing: 0.25px;
+            }
+        }
+
+        h4 {
+            color: #15182E;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 5px;
+            letter-spacing: 0.25px;
+            margin-top: 10px;
+        }
+
+        form {
+
+            h6 {
+                color: rgba(21, 24, 46, 0.7);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            .button_box {
+                margin-bottom: 20px;
+
+                button {
+                    width: 100%;
+                    height: 50px;
+                    background-color: #fff;
+                    border: 1px solid #1E2875;
+                    color: #1E2875;
+                    border-radius: 10px;
+                    font-size: 1em;
+                    padding-left: 15px;
+                    margin-bottom: 30px;
+                }
+
+                button.admin {
+                    background: #1E2875;
+                    color: #fff;
+                }
+
+
+                
+            }
+
+            button {
+                color: rgba(255, 255, 255, 0.5);
+                background: #AAAAAA;
+                ;
+                border: none;
+                border-radius: 10px;
+                font-size: 14px;
+                font-weight: 900;
+                height: 50px;
+                width: 103%;
+            }
+
+           
+
+
+
+
+        }
+    }
+}

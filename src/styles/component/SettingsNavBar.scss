@@ -1,0 +1,29 @@
+.settings_navbar_container {
+    background-color: #F4F4F8;
+    // width: 150px;
+    width: 16%;
+    // height: 100vh;
+    padding: 110px 25px;
+    color: #768389;
+    text-align: left;
+
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        
+    }
+
+    .navbar {
+        margin-top: 40px;
+        span {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        span.active {
+            color: #1E2875;
+        }
+    }
+}

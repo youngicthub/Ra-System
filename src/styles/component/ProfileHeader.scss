@@ -1,0 +1,35 @@
+.profile_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+
+    .profile_detail_wrapper {
+        width: 180px;
+        height: 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 0.5px solid #E8EFF7;
+        padding: 4px 5px;
+        border-radius: 12px;
+
+        .profileImage {
+            width: 34px;
+            height: 34px;
+            border-radius: 12px;
+        }
+
+        p {
+            width: 85px;
+            font-size: 10px;
+            font-weight: 500;
+            color: #373B5C;
+            line-height: 20px;
+
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+}

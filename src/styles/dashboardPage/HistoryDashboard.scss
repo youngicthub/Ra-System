@@ -1,0 +1,84 @@
+main.history_dashboard {
+    // padding-left: 20px;
+    background-color: #E8E9F1;
+    display: flex;
+
+    .hero {
+        width: 62%;
+        background-color: #FFFFFF;
+        display: flex;
+
+        // .inner_navbar {
+        //     margin-top: 20px;
+        //     position: relative;
+        //     width: 19%;
+        //     height: 100%;
+        //     background-color: #373B5C;
+        //     display: block;
+        //     padding-top: 15px;
+        //     hr {
+        //         background: #fff;
+        //         opacity: 50%;
+        //         margin-top: 30px;
+        //     }
+
+        //     span {
+        //         padding-left: 20px;
+        //         display: block;
+        //         margin-top: 30px;
+        //         font-size: 12px;
+        //         font-weight: 400;
+        //         color: #FFFFFF;
+        //         text-align: left;
+        //     }
+
+        //     span.nav_header {
+        //         font-weight: 600;
+        //     }
+
+
+        //     .close_navbar_icon {
+        //         position: absolute;
+        //         top: 14px;
+        //         right: -10px;
+        //         padding: 7px;
+        //         border-radius: 100%;
+        //         background: rgba(255, 255, 255, 0.8);
+        //         border: 0.5px solid #373B5C;
+        //     }
+        // }
+
+        .main_content {
+            width: 100%;
+            padding: 92px 30px 0px 0;
+
+            .main_content_header {
+                padding-left: 30px;
+                font-size: 25px;
+                font-weight: 400;
+                color: #373B5C;
+                margin-bottom: -5px;
+            }
+
+            hr {
+                width: 100%;
+            }
+
+            div {
+                margin-left: 170px;
+                margin-top: 80px;
+                img {
+
+                }
+
+                p {
+                    color: #15182E;
+                    font-size: 40px;
+                    font-weight: 400;
+                }
+            }
+
+            
+        }
+    }
+}

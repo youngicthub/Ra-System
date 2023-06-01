@@ -1,0 +1,232 @@
+main.settings_payment {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100vh;
+
+    .hero {
+        display: flex;
+        width: 80%;
+
+        section.content_container {
+            width: 75%;
+            padding: 40px 30px;
+
+            .content_details {
+                margin-top: 40px;
+
+                .header_wrapper {
+                    border-bottom: 1px solid #373B5C;
+                    padding-bottom: 15px;
+
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #1E2875;
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #768389;
+                    }
+                }
+
+                .container {
+                    .card_detail_wrapper {
+                        margin-top: 30px;
+
+                        h2 {
+                            color: #373B5C;
+                            font-size: 22px;
+                            font-weight: 500;
+                        }
+
+                        .card_wrapper {
+                            background: rgba(244, 244, 248, 0.5);
+                            border-radius: 8px;
+                            width: 400px;
+                            // height: 60px;
+                            padding: 15px 30px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            
+                            
+
+                            span {
+                                color: #15182E;
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+
+                            input {
+                                background: #1E2875;
+                                border: 1px solid #1E2875;
+                            }
+
+                            div {
+                                p {
+                                    color: #15182E;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                }
+
+                                span {
+                                    color: #768389;
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            
+                        }
+
+                        .add_card_button {
+                            button {
+                                padding: 5px 10px;
+                                border-radius: 5px;
+                                border: 1px solid #1E2875;
+                                color: #1E2875;
+                                font-size: 18px;
+                                font-weight: 400;
+                                background: #fff;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+
+                    .button_container {
+                        button {
+                            color: #fff;
+                            background: #1E2875;
+                            border: none;
+                            border-radius: 10px;
+                            font-size: 20px;
+                            font-weight: 500;
+                            height: 56px;
+                            width: 220px;
+                            text-align: center;
+                            margin: 50px 0px 0px 90px;
+                        }
+
+                        button.cancel {
+                            color: #1E2875;
+                            background-color: #fff;
+                            border: 1px solid #1E2875;
+                        }
+                    }
+
+                    
+                }
+
+                .history_container {
+                    margin-top: 80px;
+                    .history_header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 40px;
+                        border-bottom: 1px solid #373B5C;
+                        h2 {
+                            color: #373B5C;
+                            font-size: 22px;
+                            font-weight: 500;
+                        }
+                        div {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .filter_section {
+                                display: flex;
+                                text-align: center;
+                        
+                                span {
+                                    color: #373B5C;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                }
+                        
+                                img {
+                                    margin-left: 20px;
+                                }
+                        
+                                img.filter {
+                                    margin-left: 10px;
+                                }
+                            }
+                        
+                            button {
+                                margin-left: 20px;
+                                color: #1E2875;
+                                font-size: 18px;
+                                font-weight: 400;
+                                padding: 7px 24px;
+                                border: 1px solid #1E2875;
+                                border-radius: 5px;
+                                background: #fff;
+                            }
+                        }
+                    }
+
+                    table {
+                        border-collapse: collapse;
+                        margin: 15px 0;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #768389;
+                        min-width: 100%;
+                        background-color: #ffff;
+
+                        thead {
+                            background: #fff;
+
+                            tr {
+                                text-align: left;
+
+                                th {
+                                    padding: 12px 15px;
+                                    font-size: 20px;
+                                    color: #768389;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            background-color: #fff;
+                            tr {
+                                background-color: #fff;
+                            
+                                td {
+                                    padding: 12px 15px;
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    color: #15182E;
+                        
+                                }
+
+                                td.paid {
+                                    color: #0E8B51;
+                                }
+                        
+                        
+                            
+                            }
+
+                            // tr:nth-child(2n+1) {
+                            //     background: rgba(244, 244, 248, 0.5);
+                            // }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+    }
+}

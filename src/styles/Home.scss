@@ -1,0 +1,33 @@
+.home_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 74px;
+
+    p {
+        width: 520px;
+        color: #373B5C;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
+    div {
+        h1 {
+            font-size: 54px;
+            font-weight: 300;
+            color: #15182E;
+            width: 550px;
+        }
+
+        button {
+            background: #1E2875;
+            border: none;
+            border-radius: 10px;
+            color: #FFFF;
+            font-size: 24px;
+            font-weight: 500;
+            padding: 10px 24px;
+        }
+    }
+}

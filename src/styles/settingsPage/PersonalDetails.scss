@@ -1,0 +1,114 @@
+main.personal_details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100vh;
+    .hero {
+        display: flex;
+        width: 80%;
+
+        section.content_container {
+            width: 75%;
+            padding: 40px 30px;
+
+            .content_details {
+                margin-top: 40px;
+
+                .header_wrapper {
+                    border-bottom: 1px solid #373B5C;
+                    padding-bottom: 15px;
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #1E2875;
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #768389;
+                    }
+                }
+
+                .details_edit_field {
+                    margin-top: 30px;
+                    padding-bottom: 60px;
+                    .input_div_wrapper {
+                        margin-bottom: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                
+                        .input_div {
+                            display: block;
+                
+                            span {
+                                display: block;
+                                font-size: 18px;
+                                font-weight: 400;
+                                margin-bottom: 10px;
+                                color: #15182E;
+                               
+                
+                                span {
+                                    display: inline;
+                                    margin-left: 10px;
+                                    font-size: 12px;
+                                    color: #768389;
+                                }
+                            }
+                
+                            input {
+                                width: 270px;
+                                height: 42px;
+                                border: 1px solid rgba(55, 59, 92, 0.3);
+                                padding-left: 30px;
+                                border-radius: 5px;
+                                color: #768389;
+                            }
+                
+                            textarea {
+                                width: 750px;
+                                margin-top: 5px;
+                                height: 116px;
+                                border: 0.5px solid rgba(0, 0, 0, 0.2);
+                                border-radius: 5px;
+                                padding-left: 30px;
+                            }
+                        }
+                
+                       
+                    }
+                
+                    .button_container {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 50px;
+                        button {
+                            color: #fff;
+                            background: #1E2875;
+                            border: none;
+                            border-radius: 10px;
+                            font-size: 20px;
+                            font-weight: 500;
+                            height: 56px;
+                            width: 220px;
+                            text-align: center;
+                        }
+                
+                        button.cancel {
+                            color: #768389;
+                            background-color: #fff;
+                            border: 1px solid #768389;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+    }
+}

@@ -1,0 +1,183 @@
+main.user_permission {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100vh;
+
+    .hero {
+        display: flex;
+        width: 80%;
+
+        section.content_container {
+            width: 75%;
+            padding: 40px 30px;
+
+            .content_details {
+                margin-top: 40px;
+
+                .header_wrapper {
+                    border-bottom: 1px solid #373B5C;
+                    padding-bottom: 15px;
+
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #373B5C;
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #768389;
+                    }
+                }
+
+                .updates_container {
+                    margin-top: 20px;
+                    .update_wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        .content {
+                            h3 {
+                                font-size: 20px;
+                                font-weight: 500;
+                                color: #15182E;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #768389;
+                            }
+                        }
+
+                        .toggle_button {
+                            width: 65px;
+                            height: 35px;
+                            background-color: #1E2875;
+                            border-radius: 18px;
+                            margin-top: 20px;
+                            position: relative;
+
+                            .eclipse {
+                                width: 35px;
+                                height: 35px;
+                                background-color: #fff;
+                                border-radius: 50%;
+                                position: absolute;
+                                right: 0;
+                            }
+                            .eclipse.active {
+                                left: 0;
+                                box-shadow: -2px 2px 1px #888888;
+                            }
+                        }
+
+                        .toggle_button.active {
+                            background-color: #cfcfd0;
+                           
+                        }
+                    }
+                }
+
+                .member_container {
+                    margin-top: 20px;
+                    .team_header_wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #373B5C;
+                        h2 {
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: #373B5C;
+                        }
+
+                        button {
+                            padding: 10px 10px;
+                            border: 1px solid #1E2875;
+                            color: #1E2875;
+                            font-size: 18px;
+                            font-weight: 400;
+                            background-color: #fff;
+                        }
+                    }
+
+                    table {
+                        border-collapse: collapse;
+                        margin: 15px 0;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #768389;
+                        min-width: 100%;
+                        background-color: #ffff;
+
+                        thead {
+                            background: #fff;
+
+                            tr {
+                                text-align: left;
+
+                                th {
+                                    padding: 12px 15px;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            background-color: #fff;
+                            tr {
+                                background-color: #fff;
+                            
+                                td {
+                                    padding: 12px 15px;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    color: #15182E;
+                        
+                                }
+                        
+                                td.invitee_profile {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                        
+                                    img {
+                                        border-radius: 50%;
+                                        margin-right: 12px;
+                                    }
+                        
+                                    p {
+                                        color: #15182E;
+                                    }
+                        
+                                    span {
+                                        color: #768389;
+                                    }
+                                }
+                        
+                                td.status_active {
+                                    color: #0E8B51;
+                                }
+                        
+                                td.status_offline {
+                                    color: #DF0B00;
+                                }
+                            }
+
+                            tr:nth-child(2n+1) {
+                                background: rgba(244, 244, 248, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+    }
+}

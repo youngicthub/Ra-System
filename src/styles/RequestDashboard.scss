@@ -1,0 +1,205 @@
+main.request_dashboard {
+    // padding-left: 20px;
+    background-color: #E8E9F1;
+    display: flex;
+
+    .hero {
+        width: 62%;
+        background-color: #FFFFFF;
+        display: flex;
+
+        .main_content {
+            width: 100%;
+            padding: 92px 30px 0px 0;
+
+            .main_content_header {
+                padding-left: 30px;
+                font-size: 25px;
+                font-weight: 400;
+                color: #373B5C;
+                margin-bottom: -5px;
+            }
+
+            hr {
+                width: 100%;
+            }
+
+            .filter_section {
+                float: right;
+                margin-top: 15px;
+                display: flex;
+                text-align: center;
+
+                span {
+                    color: #373B5C;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                img {
+                    margin-left: 20px;
+                }
+
+                img.filter {
+                    margin-left: 10px;
+                }
+            }
+
+            .block_wrapper {
+                display: block;
+                clear: both;
+
+                
+
+                .block {
+                    margin-top: 50px;
+                    padding-left: 30px;
+                    p {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #1E2875;
+
+                        i {
+                            padding: 5px 8px;
+                            border-radius: 50%;
+                            color: #FFFFFF;
+                            font-style: normal;
+                        }
+
+                        i.blockUpArrow {
+                            background: url("../assets/downArrowIcon.svg") no-repeat center;
+                        }
+
+                        i.blockRightArrow {
+                            background: url("../assets/rightArrowIcon.svg") no-repeat center;
+                        }
+                    }
+
+                    .card_wrapper {
+                        position: relative;
+                        display: none;
+                        .search_container {
+                            
+                            input {
+                                width: 90%;
+                                height: 38px;
+                                border: 1px solid #373B5C;
+                                border-radius: 10px;
+                                outline: none;
+                                padding-left: 60px;
+                                font-weight: 500;
+                                font-size: 17px;
+                                color: #373B5C;
+                            }
+
+                            img {
+                                position: absolute;
+                                left: 30px;
+                                top: 12px;
+                            }
+                        }
+
+
+                        .card {
+                            display: flex;
+                            flex-direction: column;
+                            background: #F4F4F8;
+                            border-radius: 10px;
+                            padding: 20px;
+                            margin-top: 30px;
+
+                            .top_container {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .left_div {
+                                    display: flex;
+                                    align-items: center;
+
+                                    img {
+                                        border-radius: 10px;
+                                    }
+
+                                    span {
+                                        margin-left: 15px;
+                                        font-weight: 700;
+                                        font-size: 20px;
+                                        color: #15182E;
+                                    }
+                                }
+
+                                .right_div {
+                                    display: flex;
+                                    align-items: center;
+
+                                    span {
+                                        color: #15182E;
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+
+                            .bottom_container {
+                                margin-top: 40px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .left_div {
+                                    display: flex;
+                                    align-items: center;
+
+                                    span {
+                                        color: #344054;
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        margin-left: 15px;
+                                    }
+                                }
+
+                                .right_div {
+                                    display: flex;
+                                    align-items: center;
+
+                                    span {
+                                        margin-left: 5px;
+                                        color: #344054;
+                                        font-weight: 500;
+                                        font-size: 16px;
+
+                                        i {
+                                            margin-left: 10px;
+                                            color: #15182E;
+                                            font-style: normal;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .card_wrapper.active {
+                        display: block;
+                    }
+                }
+
+                .new_request {
+                    margin-top: 50px;
+                    padding-left: 30px;
+                    span {
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: #15182E;
+                    }
+                }
+            }
+
+        
+
+
+        }
+    }
+}

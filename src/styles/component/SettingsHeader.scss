@@ -1,0 +1,19 @@
+.settings_header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    input {
+        height: 43px;
+        width: 258px;
+        border: 1px solid rgba(55, 59, 92, 0.3);
+        border-radius: 5px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #768389;
+    }
+
+    div {
+        width: 300px;
+    }
+}
