@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AuthHeader from '../../layout/AuthHeader';
 import '../../styles/SignIn.scss';
+import { Outlet, Link } from "react-router-dom";
 
 
 import logo from '../../assets/Vector-i.svg';
@@ -63,7 +64,7 @@ class SignIn extends Component {
                         <span className='input_label'>Email</span>
                     </div>
                     
-                    <button>Next</button>
+                    <Link to="/signup-otp"><button>Next</button></Link>
                     <div className='or_text'>or</div>
 
                     <button className='google_auth_button'>

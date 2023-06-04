@@ -6,6 +6,8 @@ import logo from '../../assets/Vector-i.svg';
 import hero_img from '../../assets/HeroRectangleImage.svg';
 import google from '../../assets/google-svgrepo-com 1.svg';
 
+import { Outlet, Link } from "react-router-dom";
+
 export default class SignInAdminEmployee extends Component {
   render() {
     return (
@@ -25,8 +27,8 @@ export default class SignInAdminEmployee extends Component {
                 <form action="#">
                     <h6>Continue as</h6>
                     <div className="button_box">
-                        <button>Employee</button>
-                        <button className="admin">Admin</button>
+                        <Link to="/signin"><button>Employee</button></Link>
+                        <Link to="/signin"><button className="admin">Admin</button></Link>
                     </div>
                     
                 </form>

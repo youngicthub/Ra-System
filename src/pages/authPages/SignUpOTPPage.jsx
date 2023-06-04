@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AuthHeader from '../../layout/AuthHeader';
 import '../../styles/SignUpOTPPage.scss';
+import { Outlet, Link } from "react-router-dom";
 
 import logo from '../../assets/Vector-i.svg';
 
@@ -122,7 +123,7 @@ class SignUpOTPPage extends Component {
                         <span>Code will expire in 5 mins</span>
                     </div>
                     {/* <p>OTP Entered - {this.state.otp.join("")}</p> */}
-                    <button>Next</button>
+                    <Link to="/account-setup-intro"><button>Next</button></Link>
 
                     <span className='other_links'>Resend code</span>
 

@@ -1,25 +1,31 @@
-header {
+header.auth_header {
     background: rgba(28, 27, 31, 0.12);
     margin-top: 20px;
     padding: 10px 70px;
+    display: flex;
+    align-items: stretch;
 
     .header_logo {
         width: 25px;
         height: 22px;
+        align-self: flex-start;
+        
     }
 }
 
 
 
 @media only screen and (min-width: 1400px) {
-    header {
+    header.auth_header {
         background: rgba(28, 27, 31, 0.12);
         margin-top: 40px;
         padding: 10px 50px;
+        
 
         .header_logo {
             width: 25px;
             height: 22px;
+            // align-self: flex-end;
         }
     }
 }

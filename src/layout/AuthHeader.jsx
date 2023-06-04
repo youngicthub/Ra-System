@@ -7,7 +7,7 @@ class AuthHeader extends Component {
   render() {
     return (
       <React.Fragment>
-         <header>
+         <header className='auth_header'>
             <img src={logo} className="header_logo" alt="logo" />
         </header>
       </React.Fragment>

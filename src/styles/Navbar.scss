@@ -20,7 +20,7 @@
     align-items: center;
    gap: 0 .5rem;
  }
-     a{
+     .link_nav{
         border: 1px solid;
         border-radius: .5rem;
         border: 1px solid #1E2875;
@@ -33,18 +33,18 @@
         height: 2.5rem;
         align-items: center;
     }
-     a:nth-child(3){
+     .link_nav:nth-child(3){
         width: 16rem;
         background-color:#1E2875;
 color:white;
     }
-    a:hover{
+    .link_nav:hover{
         background:#1E2875;  
         color: white;
         transition: all .5s ease;
         cursor: pointer;
     }
-    a:nth-child(3):hover{
+    .link_nav:nth-child(3):hover{
         color:#1E2875;  
         background: white;
         transition: all .5s ease;
@@ -55,12 +55,12 @@ color:white;
      h2{
         font-size: 1.5rem;
      }
-     a{
+     .link_nav{
         width: 7rem;
         justify-content: center;
         height: 2.5rem;
      }
-     a:nth-child(3){
+     .link_nav:nth-child(3){
         width: 14rem;
     }
     }

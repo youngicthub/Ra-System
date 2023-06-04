@@ -76,6 +76,20 @@ main.SignAdminEmployee {
                     color: #fff;
                 }
 
+                button:hover {
+                    background: #1E2875;
+                    color: white;
+                    transition: all .5s ease;
+                    cursor: pointer;
+                }
+
+                button.admin:hover {
+                    color: #1E2875;
+                    background: white;
+                    transition: all .5s ease;
+                    cursor: pointer;
+                }
+
 
                 
             }

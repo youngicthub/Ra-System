@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Outlet, Link } from "react-router-dom";
 
 import '../styles/ProfileSideDashboard.scss';
 
@@ -29,26 +30,33 @@ export default class ProfileSideDashboard extends Component {
                         <span>Dashboard</span>
                     </div> */}
 
+                    <Link to="/work-management">
                     <div className="nav_wrapper active">
                         <img src={workManagementIcon} className="nav_icon" alt="nav logo" />
                         <span>Work management</span>
                     </div>
+                    </Link>
 
-
+                    <Link to="/request">
                     <div className="nav_wrapper active">
                         <img src={requestIcon} className="nav_icon" alt="nav logo" />
                         <span>Requests</span>
                     </div>
+                    </Link>
 
+                    <Link to="/history">
                     <div className="nav_wrapper">
                         <img src={historyIcon} className="nav_icon" alt="nav logo" />
                         <span>History</span>
                     </div>
+                    </Link>
 
+                    <Link to="/settings/details">
                     <div className="nav_wrapper">
                         <img src={humanIcon} className="nav_icon" alt="nav logo" />
                         <span>Settings</span>
                     </div>
+                    </Link>
 
                     
                 </div>

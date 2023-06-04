@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Outlet, Link } from "react-router-dom";
 
 import ProfileNavSideBar from '../../components/ProfileNavSideBar';
 import ProfileSideDashboard from '../../components/ProfileSideDashboard';
@@ -41,8 +42,8 @@ export default class ProfileAdministration extends Component {
 
                         <div className="profile_edit_field">
                             <div className="header_links">
-                                <span className='active'>Organisation details</span>
-                                <span>Invite Members</span>
+                                <Link to="/profile-admin/organization-detail"><span className='active'>Organisation details</span></Link>
+                                <Link to="/profile-admin/invite-members"><span>Invite Members</span></Link>
                                 <span>Export data  account</span>
                             </div>
                             <div className="input_div_wrapper">

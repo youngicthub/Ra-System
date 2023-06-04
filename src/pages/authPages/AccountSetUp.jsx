@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AuthHeader from '../../layout/AuthHeader';
 import '../../styles/AccountSetUp.scss';
+import { Outlet, Link } from "react-router-dom";
 
 import logo from '../../assets/Vector-i.svg';
 import hero_img from '../../assets/undraw_team_page_re_cffb 1.svg';
@@ -39,7 +40,7 @@ class AccountSetUp extends Component {
                             
                         </div>
 
-                        <button>Create Account</button>
+                        <Link to="/"><button>Create Account</button></Link>
                     </form>
                 </div>
             </main>

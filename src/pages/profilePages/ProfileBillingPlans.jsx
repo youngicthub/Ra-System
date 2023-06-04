@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Outlet, Link } from "react-router-dom";
 
 import ProfileNavSideBar from '../../components/ProfileNavSideBar';
 import ProfileSideDashboard from '../../components/ProfileSideDashboard';
@@ -44,8 +45,8 @@ export default class ProfileBillingPlans extends Component {
 
                         <div className="profile_edit_field">
                             <div className="header_links">
-                                <span>Payment method</span>
-                                <span className='active'>Billing plans</span>
+                                <Link to="/profile-billing/payment-method"><span>Payment method</span></Link>
+                                <Link to="/profile-billing/plans"><span className='active'>Billing plans</span></Link>
                                 <span>Billing history</span>
                             </div>
 
