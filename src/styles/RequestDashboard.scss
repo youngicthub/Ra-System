@@ -54,10 +54,13 @@ main.request_dashboard {
                 .block {
                     margin-top: 50px;
                     padding-left: 30px;
+                    // display: flex;
+                    // align-items: stretch;
                     p {
                         font-size: 18px;
                         font-weight: 600;
                         color: #1E2875;
+                        // align-self: flex-start;
 
                         i {
                             padding: 5px 8px;
