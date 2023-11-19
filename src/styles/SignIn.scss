@@ -1,5 +1,3 @@
-
-
 main.SignIn {
     padding: 40px 90px;
     display: flex;
@@ -7,6 +5,17 @@ main.SignIn {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
+    #signinLink {
+        background-color: #1E2875;
+        color: #fff;
+        border: 1px solid #1E2875;
+    }
+
+    #signinLink:hover {
+        background-color: #fff;
+        color: #1E2875;
+    }
 
     .left_content {
         height: 538px;
@@ -49,7 +58,7 @@ main.SignIn {
         }
 
         form {
-            
+
             h6 {
                 color: #15182E;
                 font-style: normal;
@@ -61,6 +70,7 @@ main.SignIn {
             .input_box {
                 position: relative;
                 margin-bottom: 20px;
+
                 input {
                     width: 100%;
                     height: 50px;
@@ -71,7 +81,7 @@ main.SignIn {
                     padding-left: 15px;
                 }
 
-    
+
                 span.input_label {
                     position: absolute;
                     left: 15px;
@@ -82,13 +92,14 @@ main.SignIn {
                     text-transform: uppercase;
                     background: #ffff;
                     padding: 0 4px;
-                    
+
                 }
             }
 
             button {
                 color: rgba(255, 255, 255, 0.5);
-                background: #AAAAAA;;
+                background: #1E2875;
+                ;
                 border: none;
                 border-radius: 10px;
                 font-size: 14px;
@@ -109,7 +120,7 @@ main.SignIn {
                 }
             }
 
-            
+
 
 
         }
@@ -123,7 +134,8 @@ section.SignUp_section {
     top: 0px;
     z-index: 999;
     padding: 100px 150px 0 0;
-    div.SignUp_section_wrapper {  
+
+    div.SignUp_section_wrapper {
         padding-left: 80px;
         z-index: 999;
         background-color: #ffff;
@@ -236,6 +248,7 @@ section.SignUp_section {
                     border: 1px solid #1E2875;
                     background-color: #fff;
                     color: #1E2875;
+
                     img {
                         width: 24px;
                         height: 21px;
@@ -413,7 +426,7 @@ section.SignUp_section {
         top: 0px;
         z-index: 999;
         padding: 100px 50px;
-    
+
         div.SignUp_section_wrapper {
             padding-left: 100px;
             z-index: 999;
@@ -560,8 +573,8 @@ section.SignUp_section {
         }
     }
 
-    
-    
+
+
     .blur_background_wrapper {
         position: absolute;
         background: rgba(30, 40, 117, 0.5);

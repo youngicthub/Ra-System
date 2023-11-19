@@ -4,6 +4,22 @@
     align-items: center;
     padding: 50px 74px;
 
+    .link_nav {
+        background-color: #1E2875;
+        color: #fff;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        border: 1px solid #1E2875;
+    }
+
+    .link_nav:hover {
+        background-color: #fff;
+        color: #1E2875;
+    }
+
     p {
         width: 520px;
         color: #373B5C;
@@ -29,5 +45,6 @@
             font-weight: 500;
             padding: 10px 24px;
         }
+
     }
 }

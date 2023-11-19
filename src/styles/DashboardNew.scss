@@ -38,21 +38,21 @@ main.dashboard {
                 border-radius: 15px;
                 padding: 20px 15px;
 
-                 p {
+                p {
                     font-size: 17px;
                     font-weight: 300;
                     color: #15182E;
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: -2px;
-                 }
+                }
 
-                 span.amnt {
+                span.amnt {
                     font-size: 24px;
                     font-weight: 600;
                     color: #272830;
                     margin-left: 20px;
-                 }
+                }
             }
         }
 
@@ -62,6 +62,7 @@ main.dashboard {
 
             .block {
                 margin-bottom: 40px;
+
                 p {
                     font-size: 17px;
                     font-weight: 600;
@@ -79,5 +80,5 @@ main.dashboard {
         }
     }
 
-    
+
 }

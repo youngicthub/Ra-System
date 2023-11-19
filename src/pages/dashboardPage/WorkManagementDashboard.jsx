@@ -150,7 +150,7 @@ export default class WorkManagementDashboard extends Component {
                         
                       </tbody>
                     </table>
-                    <button>+ Add Employee</button>
+                    <button className='add_employee'>+ Add Employee</button>
                   </div>
               </div>
               <div className="block">

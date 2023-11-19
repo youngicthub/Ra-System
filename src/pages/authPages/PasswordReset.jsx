@@ -18,7 +18,7 @@ export default class PasswordReset extends Component {
           </div>
           <button>continue</button>
         </main>
-        
+
       </React.Fragment>
     )
   }

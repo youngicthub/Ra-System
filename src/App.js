@@ -10,6 +10,7 @@ import SignInAdminEmployee from "./pages/authPages/SignInAdminEmployee";
 import PasswordReset from "./pages/authPages/PasswordReset";
 import NewPassword from "./pages/authPages/NewPassword";
 
+
 // Landing page
 import Compile from "./pages/landingPage/Compile";
 
@@ -54,6 +55,7 @@ function App() {
           <Route exact path="/sign" element={<SignInAdminEmployee />} />
           <Route exact path="/reset" element={<PasswordReset />} />
           <Route exact path="/new" element={<NewPassword />} />
+          
 
           <Route
             exact
@@ -96,7 +98,6 @@ function App() {
           <Route exact path="/settings/plan" element={<SettingsPlan />} />
         </Routes>
       </BrowserRouter>
-      {/* <SignIn /> */}
       {/* <SignUp /> */}
       {/* <SignUpOTPPage /> */}
       {/* <AccountSetUpIntro /> */}
