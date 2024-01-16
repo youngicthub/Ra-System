@@ -31,227 +31,258 @@ export default class RequestDashboard extends Component {
             all: false,
             pending: false,
             approved: false,
-            declined: false
+            declined: false,
+            newRequest: false
         }
     }
-  render() {
-    return (
-      <React.Fragment>
-         <main className="request_dashboard">
-            <ProfileSideDashboard />
+    render() {
+        return (
+            <React.Fragment>
+                <main className="request_dashboard">
+                    <ProfileSideDashboard />
 
-            <section className="hero">
-               <div className="main_content">
-                    <h1 className="main_content_header">Requests</h1>
-                    <hr />
-                    <div className="filter_section">
-                        <span>Filter</span>
-                        <img src={filterIcon} className="filter" alt="" />
-                        <img src={downArrowIcon} alt="" />
+                    <section className="hero">
+                        <div className="main_content">
+                            <h1 className="main_content_header">Requests</h1>
+                            <hr />
+                            <div className="filter_section">
+                                <span>Filter</span>
+                                <img src={filterIcon} className="filter" alt="" />
+                                <img src={downArrowIcon} alt="" />
+                            </div>
+
+                            <div className='block_wrapper'>
+                                <div className="block">
+                                    <p onClick={() => {
+                                        this.setState({
+                                            all: !this.state.all
+                                        })
+                                    }}>All <i className={this.state.all ? 'blockUpArrow' : 'blockRightArrow'}></i></p>
+                                    <div className={this.state.all ? 'card_wrapper active' : 'card_wrapper'}>
+                                        <div className="search_container">
+                                            <input type="text" placeholder='Search' />
+                                            <img src={searchIcon} alt="" />
+                                        </div>
+                                        <div className="card">
+                                            <div className="top_container">
+                                                <div className='left_div'>
+                                                    <img src={AsianManAvatar} alt="" />
+                                                    <span>Workstation Transfer</span>
+                                                </div>
+                                                <div className='right_div'>
+                                                    <img src={yellowEclipse} alt="" />
+                                                    <span>Pending</span>
+                                                    <i>view</i>
+                                                </div>
+                                            </div>
+                                            <div className="bottom_container">
+                                                <div className="left_div">
+                                                    <img src={chatIcon} alt="" />
+                                                    <span>DracoMango</span>
+                                                </div>
+                                                <div className="right_div">
+                                                    <img src={calendarIcon} alt="" />
+                                                    <span>Proposed Date <i>15th June, 2023</i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card">
+                                            <div className="top_container">
+                                                <div className='left_div'>
+                                                    <img src={AsianManAvatarII} alt="" />
+                                                    <span>Maternity Leave</span>
+                                                </div>
+                                                <div className='right_div'>
+                                                    <img src={greenEclipse} alt="" />
+                                                    <span>Approved</span>
+                                                    <i>view</i>
+                                                </div>
+                                            </div>
+                                            <div className="bottom_container">
+                                                <div className="left_div">
+                                                    <img src={chatIcon} alt="" />
+                                                    <span>IngaV</span>
+                                                </div>
+                                                <div className="right_div">
+                                                    <img src={calendarIcon} alt="" />
+                                                    <span>Proposed Date <i>25th May, 2023</i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card">
+                                            <div className="top_container">
+                                                <div className='left_div'>
+                                                    <img src={AsianManAvatarIII} alt="" />
+                                                    <span>Travel Leave</span>
+                                                </div>
+                                                <div className='right_div'>
+                                                    <img src={redEclipse} alt="" />
+                                                    <span>Declined</span>
+                                                    <i>view</i>
+                                                </div>
+                                            </div>
+                                            <div className="bottom_container">
+                                                <div className="left_div">
+                                                    <img src={chatIcon} alt="" />
+                                                    <span>RinaMenol</span>
+                                                </div>
+                                                <div className="right_div">
+                                                    <img src={calendarIcon} alt="" />
+                                                    <span>Proposed Date <i>10th May, 2023</i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="block">
+                                    <p onClick={() => {
+                                        this.setState({
+                                            pending: !this.state.pending
+                                        })
+                                    }}>Pending <i className={this.state.pending ? 'blockUpArrow' : 'blockRightArrow'}></i></p>
+                                    <div className={this.state.pending ? 'card_wrapper active' : 'card_wrapper'}>
+                                        <div className="search_container">
+                                            <input type="text" placeholder='Search' />
+                                            <img src={searchIcon} alt="" />
+                                        </div>
+                                        <div className="card">
+                                            <div className="top_container">
+                                                <div className='left_div'>
+                                                    <img src={AsianManAvatar} alt="" />
+                                                    <span>Workstation Transfer</span>
+                                                </div>
+                                                <div className='right_div'>
+                                                    <img src={yellowEclipse} alt="" />
+                                                    <span>Pending</span>
+                                                    <i>view</i>
+                                                </div>
+                                            </div>
+                                            <div className="bottom_container">
+                                                <div className="left_div">
+                                                    <img src={chatIcon} alt="" />
+                                                    <span>DracoMango</span>
+                                                </div>
+                                                <div className="right_div">
+                                                    <img src={calendarIcon} alt="" />
+                                                    <span>Proposed Date <i>15th June, 2023</i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="block">
+                                    <p onClick={() => {
+                                        this.setState({
+                                            declined: !this.state.declined
+                                        })
+                                    }}>Declined <i className={this.state.declined ? 'blockUpArrow' : 'blockRightArrow'}></i></p>
+                                    <div className={this.state.declined ? 'card_wrapper active' : 'card_wrapper'}>
+                                        <div className="search_container">
+                                            <input type="text" placeholder='Search' />
+                                            <img src={searchIcon} alt="" />
+                                        </div>
+                                        <div className="card">
+                                            <div className="top_container">
+                                                <div className='left_div'>
+                                                    <img src={AsianManAvatarIII} alt="" />
+                                                    <span>Travel Leave</span>
+                                                </div>
+                                                <div className='right_div'>
+                                                    <img src={redEclipse} alt="" />
+                                                    <span>Declined</span>
+                                                    <i>view</i>
+                                                </div>
+                                            </div>
+                                            <div className="bottom_container">
+                                                <div className="left_div">
+                                                    <img src={chatIcon} alt="" />
+                                                    <span>RinaMenol</span>
+                                                </div>
+                                                <div className="right_div">
+                                                    <img src={calendarIcon} alt="" />
+                                                    <span>Proposed Date <i>10th May, 2023</i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="block">
+                                    <p onClick={() => {
+                                        this.setState({
+                                            approved: !this.state.approved
+                                        })
+                                    }}>Approved <i className={this.state.approved ? 'blockUpArrow' : 'blockRightArrow'}></i></p>
+                                    <div className={this.state.approved ? 'card_wrapper active' : 'card_wrapper'}>
+                                        <div className="search_container">
+                                            <input type="text" placeholder='Search' />
+                                            <img src={searchIcon} alt="" />
+                                        </div>
+                                        <div className="card">
+                                            <div className="top_container">
+                                                <div className='left_div'>
+                                                    <img src={AsianManAvatarII} alt="" />
+                                                    <span>Maternity Leave</span>
+                                                </div>
+                                                <div className='right_div'>
+                                                    <img src={greenEclipse} alt="" />
+                                                    <span>Approved</span>
+                                                    <i>view</i>
+                                                </div>
+                                            </div>
+                                            <div className="bottom_container">
+                                                <div className="left_div">
+                                                    <img src={chatIcon} alt="" />
+                                                    <span>IngaV</span>
+                                                </div>
+                                                <div className="right_div">
+                                                    <img src={calendarIcon} alt="" />
+                                                    <span>Proposed Date <i>25th May, 2023</i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className="new_request">
+                                    <span onClick={() => {
+                                        this.setState({
+                                            newRequest: !this.state.newRequest
+                                        })
+                                    }}>+ New Request</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <RightSideBar />
+                    {/* <div className="background_wrappper"></div> */}
+                    <div className={this.state.newRequest ? "new_request_container show" : "new_request_container"}>
+                        <h2>Request Form</h2>
+                        <form action="">
+
+                            <input type="text" placeholder="Full Name" name="" id="" />
+                            <input type="text" placeholder='Type of Request' />
+                            <div className='label'>Proposed date</div>
+                            <input type="date" name="" id="" />
+                            <textarea name="" placeholder='content' id="" cols="30" rows="10"></textarea>
+                            <div className='label'>Attach File:</div>
+                            <input type="file" name="" id="" />
+                            <button>Submit</button>
+                        </form>
+                        <button className='cancel' onClick={() => {
+                            this.setState({
+                                newRequest: !this.state.newRequest
+                            })
+                        }}>Cancel</button>
                     </div>
-
-                    <div className='block_wrapper'>
-                            <div className="block">
-                                <p onClick={() => {
-                                    this.setState({
-                                        all: !this.state.all
-                                    })
-                                }}>All <i className={this.state.all ? 'blockUpArrow' : 'blockRightArrow'}></i></p>
-                                <div className={this.state.all ? 'card_wrapper active': 'card_wrapper'}>
-                                    <div className="search_container">
-                                        <input type="text" placeholder='Search'/>
-                                        <img src={searchIcon} alt="" />
-                                    </div>
-                                    <div className="card">
-                                        <div className="top_container">
-                                            <div className='left_div'>
-                                                <img src={AsianManAvatar} alt="" />
-                                                <span>Workstation Transfer</span>
-                                            </div>
-                                            <div className='right_div'>
-                                                <img src={yellowEclipse} alt="" />
-                                                <span>Pending</span>
-                                            </div>
-                                        </div>
-                                        <div className="bottom_container">
-                                            <div className="left_div">
-                                                <img src={chatIcon} alt="" />
-                                                <span>DracoMango</span>
-                                            </div>
-                                            <div className="right_div">
-                                                <img src={calendarIcon} alt="" />
-                                                <span>Proposed Date <i>15th June, 2023</i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card">
-                                        <div className="top_container">
-                                            <div className='left_div'>
-                                                <img src={AsianManAvatarII} alt="" />
-                                                <span>Maternity Leave</span>
-                                            </div>
-                                            <div className='right_div'>
-                                                <img src={greenEclipse} alt="" />
-                                                <span>Approved</span>
-                                            </div>
-                                        </div>
-                                        <div className="bottom_container">
-                                            <div className="left_div">
-                                                <img src={chatIcon} alt="" />
-                                                <span>IngaV</span>
-                                            </div>
-                                            <div className="right_div">
-                                                <img src={calendarIcon} alt="" />
-                                                <span>Proposed Date <i>25th May, 2023</i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card">
-                                        <div className="top_container">
-                                            <div className='left_div'>
-                                                <img src={AsianManAvatarIII} alt="" />
-                                                <span>Travel Leave</span>
-                                            </div>
-                                            <div className='right_div'>
-                                                <img src={redEclipse} alt="" />
-                                                <span>Declined</span>
-                                            </div>
-                                        </div>
-                                        <div className="bottom_container">
-                                            <div className="left_div">
-                                                <img src={chatIcon} alt="" />
-                                                <span>RinaMenol</span>
-                                            </div>
-                                            <div className="right_div">
-                                                <img src={calendarIcon} alt="" />
-                                                <span>Proposed Date <i>10th May, 2023</i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                        
-                            <div className="block">
-                                <p onClick={() => {
-                                    this.setState({
-                                        pending: !this.state.pending
-                                    })
-                                }}>Pending <i className={this.state.pending ? 'blockUpArrow' : 'blockRightArrow'}></i></p>
-                                <div className={this.state.pending ? 'card_wrapper active' : 'card_wrapper'}>
-                                    <div className="search_container">
-                                        <input type="text" placeholder='Search'/>
-                                        <img src={searchIcon} alt="" />
-                                    </div>
-                                    <div className="card">
-                                        <div className="top_container">
-                                            <div className='left_div'>
-                                                <img src={AsianManAvatar} alt="" />
-                                                <span>Workstation Transfer</span>
-                                            </div>
-                                            <div className='right_div'>
-                                                <img src={yellowEclipse} alt="" />
-                                                <span>Pending</span>
-                                            </div>
-                                        </div>
-                                        <div className="bottom_container">
-                                            <div className="left_div">
-                                                <img src={chatIcon} alt="" />
-                                                <span>DracoMango</span>
-                                            </div>
-                                            <div className="right_div">
-                                                <img src={calendarIcon} alt="" />
-                                                <span>Proposed Date <i>15th June, 2023</i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="block">
-                                <p onClick={() => {
-                                    this.setState({
-                                        declined: !this.state.declined
-                                    })
-                                }}>Declined <i className={this.state.declined ? 'blockUpArrow' : 'blockRightArrow'}></i></p>
-                                <div className={this.state.declined ? 'card_wrapper active' : 'card_wrapper'}>
-                                    <div className="search_container">
-                                        <input type="text" placeholder='Search'/>
-                                        <img src={searchIcon} alt="" />
-                                    </div>
-                                    <div className="card">
-                                        <div className="top_container">
-                                            <div className='left_div'>
-                                                <img src={AsianManAvatarIII} alt="" />
-                                                <span>Travel Leave</span>
-                                            </div>
-                                            <div className='right_div'>
-                                                <img src={redEclipse} alt="" />
-                                                <span>Declined</span>
-                                            </div>
-                                        </div>
-                                        <div className="bottom_container">
-                                            <div className="left_div">
-                                                <img src={chatIcon} alt="" />
-                                                <span>RinaMenol</span>
-                                            </div>
-                                            <div className="right_div">
-                                                <img src={calendarIcon} alt="" />
-                                                <span>Proposed Date <i>10th May, 2023</i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="block">
-                                <p onClick={() => {
-                                    this.setState({
-                                        approved: !this.state.approved
-                                    })
-                                }}>Approved <i className={this.state.approved ? 'blockUpArrow' : 'blockRightArrow'}></i></p>
-                                <div className={this.state.approved ? 'card_wrapper active' : 'card_wrapper'}>
-                                    <div className="search_container">
-                                        <input type="text" placeholder='Search'/>
-                                        <img src={searchIcon} alt="" />
-                                    </div>
-                                    <div className="card">
-                                        <div className="top_container">
-                                            <div className='left_div'>
-                                                <img src={AsianManAvatarII} alt="" />
-                                                <span>Maternity Leave</span>
-                                            </div>
-                                            <div className='right_div'>
-                                                <img src={greenEclipse} alt="" />
-                                                <span>Approved</span>
-                                            </div>
-                                        </div>
-                                        <div className="bottom_container">
-                                            <div className="left_div">
-                                                <img src={chatIcon} alt="" />
-                                                <span>IngaV</span>
-                                            </div>
-                                            <div className="right_div">
-                                                <img src={calendarIcon} alt="" />
-                                                <span>Proposed Date <i>25th May, 2023</i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div className="new_request">
-                                <span>+ New Request</span>
-                            </div>
-                            
-                    </div>
-               </div>
-            </section>
-
-            <RightSideBar />
-        </main>
-      </React.Fragment>
-    )
-  }
+                </main>
+            </React.Fragment>
+        )
+    }
 }
 
